@@ -40,19 +40,19 @@
  * @brief  gpio interrupt init
  * @return status code
  *         - 0 success
- * @note   gpio pin is PB0
+ * @note   gpio pin is PC0
  */
 uint8_t gpio_interrupt_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStruct;
     
-    __HAL_RCC_GPIOB_CLK_ENABLE();
+    __HAL_RCC_GPIOC_CLK_ENABLE();
  
     GPIO_InitStruct.Pin = GPIO_PIN_0;
     GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
   
     HAL_NVIC_SetPriority(EXTI0_IRQn, 3, 0);
     HAL_NVIC_EnableIRQ(EXTI0_IRQn);  
@@ -68,7 +68,7 @@ uint8_t gpio_interrupt_init(void)
  */
 uint8_t gpio_interrupt_deinit(void)
 {
-    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_0);
+    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_0);
     HAL_NVIC_DisableIRQ(EXTI0_IRQn);
 
     return 0;
