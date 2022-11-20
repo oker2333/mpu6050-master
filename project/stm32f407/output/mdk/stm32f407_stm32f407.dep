@@ -1,6 +1,6 @@
 Dependencies for Project 'stm32f407', Target 'stm32f407': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (..\usr\src\main.c)(0x6378BF02)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O3 -Otime --apcs=interwork --split_sections -I ..\cmsis -I ..\hal\inc -I ..\interface\inc -I ..\usr\inc -I ..\..\..\src -I ..\..\..\interface -I ..\..\..\example -I ..\..\..\test-I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ..\output\mdk\main.o --omf_browse ..\output\mdk\main.crf --depend ..\output\mdk\main.d)
+F (..\usr\src\main.c)(0x6379081A)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O3 -Otime --apcs=interwork --split_sections -I ..\cmsis -I ..\hal\inc -I ..\interface\inc -I ..\usr\inc -I ..\..\..\src -I ..\..\..\interface -I ..\..\..\example -I ..\..\..\test-I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ..\output\mdk\main.o --omf_browse ..\output\mdk\main.crf --depend ..\output\mdk\main.d)
 I (..\..\..\test\driver_mpu6050_register_test.h)(0x62E2AC39)
 I (..\..\..\interface\driver_mpu6050_interface.h)(0x62E2AC39)
 I (..\..\..\src\driver_mpu6050.h)(0x62E2AC39)
@@ -14,7 +14,7 @@ I (..\..\..\test\driver_mpu6050_dmp_tap_orient_motion_test.h)(0x62E2AC39)
 I (..\..\..\test\driver_mpu6050_dmp_pedometer_test.h)(0x62E2AC39)
 I (..\..\..\example\driver_mpu6050_basic.h)(0x62E2AC39)
 I (..\..\..\example\driver_mpu6050_fifo.h)(0x62E2AC39)
-I (..\..\..\example\driver_mpu6050_dmp.h)(0x62E2AC39)
+I (..\..\..\example\driver_mpu6050_dmp.h)(0x637902FB)
 I (..\usr\inc\shell.h)(0x62E2AC39)
 I (..\interface\inc\clock.h)(0x62E2AC39)
 I (..\hal\inc\stm32f4xx_hal.h)(0x62E2AC39)
@@ -298,7 +298,7 @@ I (..\hal\inc\stm32f4xx_hal_pcd.h)(0x62E2AC39)
 I (..\hal\inc\stm32f4xx_ll_usb.h)(0x62E2AC39)
 I (..\hal\inc\stm32f4xx_hal_pcd_ex.h)(0x62E2AC39)
 I (..\hal\inc\stm32f4xx_hal_hcd.h)(0x62E2AC39)
-F (..\..\..\test\driver_mpu6050_register_test.c)(0x62E2AC39)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O3 -Otime --apcs=interwork --split_sections -I ..\cmsis -I ..\hal\inc -I ..\interface\inc -I ..\usr\inc -I ..\..\..\src -I ..\..\..\interface -I ..\..\..\example -I ..\..\..\test-I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ..\output\mdk\driver_mpu6050_register_test.o --omf_browse ..\output\mdk\driver_mpu6050_register_test.crf --depend ..\output\mdk\driver_mpu6050_register_test.d)
+F (..\..\..\test\driver_mpu6050_register_test.c)(0x6378FD53)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O3 -Otime --apcs=interwork --split_sections -I ..\cmsis -I ..\hal\inc -I ..\interface\inc -I ..\usr\inc -I ..\..\..\src -I ..\..\..\interface -I ..\..\..\example -I ..\..\..\test-I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ..\output\mdk\driver_mpu6050_register_test.o --omf_browse ..\output\mdk\driver_mpu6050_register_test.crf --depend ..\output\mdk\driver_mpu6050_register_test.d)
 I (..\..\..\test\driver_mpu6050_register_test.h)(0x62E2AC39)
 I (..\..\..\interface\driver_mpu6050_interface.h)(0x62E2AC39)
 I (..\..\..\src\driver_mpu6050.h)(0x62E2AC39)
@@ -351,8 +351,8 @@ I (..\..\..\src\driver_mpu6050.h)(0x62E2AC39)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
-F (..\..\..\example\driver_mpu6050_dmp.c)(0x62E2AC39)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O3 -Otime --apcs=interwork --split_sections -I ..\cmsis -I ..\hal\inc -I ..\interface\inc -I ..\usr\inc -I ..\..\..\src -I ..\..\..\interface -I ..\..\..\example -I ..\..\..\test-I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ..\output\mdk\driver_mpu6050_dmp.o --omf_browse ..\output\mdk\driver_mpu6050_dmp.crf --depend ..\output\mdk\driver_mpu6050_dmp.d)
-I (..\..\..\example\driver_mpu6050_dmp.h)(0x62E2AC39)
+F (..\..\..\example\driver_mpu6050_dmp.c)(0x637906E3)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O3 -Otime --apcs=interwork --split_sections -I ..\cmsis -I ..\hal\inc -I ..\interface\inc -I ..\usr\inc -I ..\..\..\src -I ..\..\..\interface -I ..\..\..\example -I ..\..\..\test-I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ..\output\mdk\driver_mpu6050_dmp.o --omf_browse ..\output\mdk\driver_mpu6050_dmp.crf --depend ..\output\mdk\driver_mpu6050_dmp.d)
+I (..\..\..\example\driver_mpu6050_dmp.h)(0x637902FB)
 I (..\..\..\interface\driver_mpu6050_interface.h)(0x62E2AC39)
 I (..\..\..\src\driver_mpu6050.h)(0x62E2AC39)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
@@ -365,7 +365,7 @@ I (..\..\..\src\driver_mpu6050.h)(0x62E2AC39)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
-F (..\..\..\src\driver_mpu6050.c)(0x62E2AC39)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O3 -Otime --apcs=interwork --split_sections -I ..\cmsis -I ..\hal\inc -I ..\interface\inc -I ..\usr\inc -I ..\..\..\src -I ..\..\..\interface -I ..\..\..\example -I ..\..\..\test-I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ..\output\mdk\driver_mpu6050.o --omf_browse ..\output\mdk\driver_mpu6050.crf --depend ..\output\mdk\driver_mpu6050.d)
+F (..\..\..\src\driver_mpu6050.c)(0x6378FDAC)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O3 -Otime --apcs=interwork --split_sections -I ..\cmsis -I ..\hal\inc -I ..\interface\inc -I ..\usr\inc -I ..\..\..\src -I ..\..\..\interface -I ..\..\..\example -I ..\..\..\test-I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ..\output\mdk\driver_mpu6050.o --omf_browse ..\output\mdk\driver_mpu6050.crf --depend ..\output\mdk\driver_mpu6050.d)
 I (..\..\..\src\driver_mpu6050.h)(0x62E2AC39)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
@@ -5647,4 +5647,4 @@ I (..\hal\inc\stm32f4xx_hal_hcd.h)(0x62E2AC39)
 I (..\hal\inc\stm32f4xx_ll_rcc.h)(0x62E2AC39)
 I (..\hal\inc\stm32f4xx_ll_system.h)(0x62E2AC39)
 I (..\hal\inc\stm32f4xx_ll_pwr.h)(0x62E2AC39)
-F (..\hal\asm\startup_stm32f407xx_mdk.s)(0x62E2AC39)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 529" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f407xx_mdk.lst --xref -o ..\output\mdk\startup_stm32f407xx_mdk.o --depend ..\output\mdk\startup_stm32f407xx_mdk.d)
+F (..\hal\asm\startup_stm32f407xx_mdk.s)(0x63790027)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_stm32f407-IC:\Users\Joker\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 529" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f407xx_mdk.lst --xref -o ..\output\mdk\startup_stm32f407xx_mdk.o --depend ..\output\mdk\startup_stm32f407xx_mdk.d)

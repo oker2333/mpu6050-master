@@ -289,7 +289,7 @@ int main(void)
 				mpu6050_interface_debug_print("mpu6050: gyro y[0] is %0.2fdps.\n", gs_gyro_dps[0][1]);
 				mpu6050_interface_debug_print("mpu6050: gyro z[0] is %0.2fdps.\n\033[m", gs_gyro_dps[0][2]);
 
-				mpu6050_interface_delay_ms(100);
+				mpu6050_interface_delay_ms(500);
 								
 				/* get the pedometer step count */
 				res = mpu6050_dmp_get_pedometer_counter(&cnt);
