@@ -255,9 +255,6 @@ int main(void)
 				return 1;
 		}
 
-		/* delay 500 ms */
-		mpu6050_interface_delay_ms(500);
-				
 		for (i = 0; i < times; i++)
 		{
 				len = 128;
@@ -279,17 +276,17 @@ int main(void)
 				/* output */
 				mpu6050_interface_debug_print("\033[1;1Hmpu6050: %d/%lld. \n", i + 1, times);
 				mpu6050_interface_debug_print("mpu6050: fifo %d.\n", len);
-				mpu6050_interface_debug_print("mpu6050: pitch[0] is %0.2fdps. \n", gs_pitch[0]);
-				mpu6050_interface_debug_print("mpu6050: roll[0] is %0.2fdps. \n", gs_roll[0]);
-				mpu6050_interface_debug_print("mpu6050: yaw[0] is %0.2fdps. \n", gs_yaw[0]);
-				mpu6050_interface_debug_print("mpu6050: acc x[0] is %0.2fg. \n", gs_accel_g[0][0]);
-				mpu6050_interface_debug_print("mpu6050: acc y[0] is %0.2fg. \n", gs_accel_g[0][1]);
-				mpu6050_interface_debug_print("mpu6050: acc z[0] is %0.2fg. \n", gs_accel_g[0][2]);
-				mpu6050_interface_debug_print("mpu6050: gyro x[0] is %0.2fdps. \n", gs_gyro_dps[0][0]);
-				mpu6050_interface_debug_print("mpu6050: gyro y[0] is %0.2fdps. \n", gs_gyro_dps[0][1]);
-				mpu6050_interface_debug_print("mpu6050: gyro z[0] is %0.2fdps. \n\033[m", gs_gyro_dps[0][2]);
+				mpu6050_interface_debug_print("mpu6050: pitch[0] is %0.2fdps. \n", gs_pitch[len-1]);
+				mpu6050_interface_debug_print("mpu6050: roll[0] is %0.2fdps. \n", gs_roll[len-1]);
+				mpu6050_interface_debug_print("mpu6050: yaw[0] is %0.2fdps. \n", gs_yaw[len-1]);
+				mpu6050_interface_debug_print("mpu6050: acc x[0] is %0.2fg. \n", gs_accel_g[len-1][0]);
+				mpu6050_interface_debug_print("mpu6050: acc y[0] is %0.2fg. \n", gs_accel_g[len-1][1]);
+				mpu6050_interface_debug_print("mpu6050: acc z[0] is %0.2fg. \n", gs_accel_g[len-1][2]);
+				mpu6050_interface_debug_print("mpu6050: gyro x[0] is %0.2fdps. \n", gs_gyro_dps[len-1][0]);
+				mpu6050_interface_debug_print("mpu6050: gyro y[0] is %0.2fdps. \n", gs_gyro_dps[len-1][1]);
+				mpu6050_interface_debug_print("mpu6050: gyro z[0] is %0.2fdps. \n\033[m", gs_gyro_dps[len-1][2]);
 
-				mpu6050_interface_delay_ms(10);
+				mpu6050_interface_delay_ms(1);
 								
 				/* get the pedometer step count */
 				res = mpu6050_dmp_get_pedometer_counter(&cnt);

@@ -122,7 +122,7 @@
 /**
  * @brief mpu6050 dmp code definition
  */
-#define MPU6050_DMP_SAMPLE_RATE               200                                                 /**< sample rate */
+#define MPU6050_DMP_SAMPLE_RATE               1000                                                 /**< sample rate */
 #define MPU6050_DMP_GYRO_SF                   (46850825LL * 200 / MPU6050_DMP_SAMPLE_RATE)        /**< gyro sf */
 #define MPU6050_DMP_D_PEDSTD_TIMECTR          964                                                 /**< walk time mem register */
 #define MPU6050_DMP_D_PEDSTD_STEPCTR          (768 + 0x60)                                        /**< step counter mem register */
